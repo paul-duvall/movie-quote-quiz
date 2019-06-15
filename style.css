@@ -14,6 +14,12 @@ h1 {
   font-size: 45px;
 }
 
+h1 span {
+  color: transparent;
+  background-image: linear-gradient(225deg, #5ee7df 0%, #b490ca 75%);
+  -webkit-background-clip: text;
+}
+
 #mainContent {
   text-align: center;
 }
