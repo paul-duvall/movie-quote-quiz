@@ -1,6 +1,5 @@
 body {
   align-items: center;
-/*   background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%); */
   background-color: #100e17;
   display: flex;
   flex-direction: column;
@@ -12,6 +11,7 @@ body {
 
 h1 {
   font-size: 45px;
+  text-align: center;
 }
 
 h1 span {
@@ -40,6 +40,7 @@ h1 span {
 
 .question-button {
   width: 400px;
+  max-width: 80vw;
 }
 
 .start:hover, .question-button:hover {
@@ -49,6 +50,7 @@ h1 span {
 
 #questionContainer {
   max-width: 80%;
+  min-width: 75vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -85,4 +87,18 @@ h1 span {
 #message {
   margin-top: 15px;
   font-size: 25px;
+}
+
+@media only screen and (max-width:600px){
+  h1 {
+    font-size: 35px;
+  }
+
+  #questionContainer {
+    padding: 15px;
+  }
+
+  #infoContainer {
+    padding: 15px;
+  }
 }
